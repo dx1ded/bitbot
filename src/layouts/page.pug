@@ -1,0 +1,29 @@
+include @cmps/Head/head
+include ../_mixins
+
+doctype html
+html(lang=config.lang)
+  head
+    -
+      const page = {
+        title: "",
+        description: ""
+      }
+
+    block config
+
+    +head({
+      title: page.title,
+      description: page.description
+    })
+
+    //- In this block you can set page options and add styles
+
+    block styles
+
+  body
+    .site-container
+      block partials
+
+    block scripts
+    +script("scripts/imageLazy.js")

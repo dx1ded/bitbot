@@ -1,0 +1,5 @@
+.logo img {
+  @include tablet {
+    width: rem(100px);
+  }
+}

@@ -1,0 +1,23 @@
+:root {
+  // Colors
+
+  --color-black: #000;
+  --color-light: #fff;
+  --color-mischka: #e1d6e4;
+  --color-mobster: #837189;
+
+  // Offsets
+
+  --container-horizontal-offset: #{em(25px)};
+  --design-mw: #{em(1360px)};
+  --design-mw-2: #{em(944px)};
+  --mw: calc(var(--design-mw) + var(--container-horizontal-offset) * 2);
+
+  // Fonts
+
+  --font-family: "Roboto", sans-serif;
+
+  // Shades
+  // Z-indexes
+  // Border-radiuses
+}

@@ -1,0 +1,12 @@
+extends layouts/page
+include _mixins
+
+block config
+  - page.title = "BitBot"
+
+block styles
+  +style("styles/index.css")
+
+block partials
+  main
+    include @partials/index/hero

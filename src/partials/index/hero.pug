@@ -1,0 +1,29 @@
+section.hero
+  .container.hero__container
+    include @cmps/Logo/logo
+    .hero__wrapper
+      h1.hero__title Ongoing System Update
+      p.hero__text
+        | We apologize, but our system is under update at the moment. Rest assured, our engineers now work hard to get everything up as soon as possible. Meanwhile, feel free to check our twitter updates.
+      ul.list-reset.hero__links
+        li.hero__social
+          a(href="#" aria-label="Instagram")
+            +icon("instagram")
+        li.hero__social
+          a(href="#" aria-label="Whatsapp")
+            +icon("whatsapp")
+        li.hero__social
+          a(href="#" aria-label="Twitter")
+            +icon("twitter")
+        li.hero__social
+          a(href="#" aria-label="Youtube")
+            +icon("youtube")
+        li.hero__social
+          a(href="#" aria-label="Facebook")
+            +icon("facebook")
+        li.hero__social
+          a(href="#" aria-label="Telegram")
+            +icon("telegram")
+      small.hero__rights (c) 2022 BitBot [bit.bb] All Rights Reserved.
+    .hero__image
+      +image("phone.png", "A phone where opened a twitter of bitbot")
