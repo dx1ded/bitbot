@@ -4,12 +4,11 @@ import pug from 'gulp-pug'
 import gulpIf from 'gulp-if'
 import pugAlias from 'pug-alias'
 import through from 'through2'
-import typograf from 'gulp-typograf'
 
 import { configure } from '@emitty/core'
 import { parse } from 'emitty-pug-language-alias'
 
-import { isDev, isProd } from './_utils'
+import { isDev } from './_utils'
 import { development, build, alias } from './paths.json'
 import config from '../project.config.json'
 
@@ -43,7 +42,6 @@ export const markup = () => (
       plugins: [pugAlias(alias)],
       data: { isDev, config }
     }))
-    .pipe(gulpIf(isProd, typograf({ locale: ['ru', 'en-US'] })))
     .pipe(gulp.dest(build.markup))
 )
 

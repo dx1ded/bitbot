@@ -33,3 +33,4 @@ export const svgImages = () => (
 )
 
 export const imagesWatcher = () => gulp.watch(development.images.copy, images)
+export const svgImagesWatcher = () => gulp.watch("public/assets/images/*.svg", svgImages)

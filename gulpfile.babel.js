@@ -5,7 +5,7 @@ import { server } from './tasks/server'
 import { markup, markupWatcher } from './tasks/markup'
 import { styles, stylesWatcher } from './tasks/styles'
 import { scripts, scriptsWatcher } from './tasks/scripts'
-import { images, imagesWatcher, svgImages } from './tasks/images'
+import { images, imagesWatcher, svgImages, svgImagesWatcher } from './tasks/images'
 import { sprites, spritesWatcher } from './tasks/sprites'
 import { publicTask, publicWatcher } from './tasks/public'
 
@@ -43,6 +43,7 @@ export const watch = gulp.series(
     stylesWatcher,
     scriptsWatcher,
     imagesWatcher,
+    svgImagesWatcher,
     spritesWatcher,
     publicWatcher
   )
